@@ -1,0 +1,26 @@
+server:
+  port: 8015
+  undertow:
+    worker-threads: 400
+    io-threads: 100
+    buffer-size: 1024
+    direct-buffers: true
+
+spring:
+  application:
+    name: springboot-upload-file
+  jackson:
+    time-zone: GMT+8
+
+freemarker:
+  cache: false
+  check-template-location: true
+  charset: UTF-8
+  content-type: text/html
+  expose-request-attributes: false
+  expose-session-attributes: false
+  expose-spring-macro-helpers: false
+
+web:
+  uploadPath: E:/testUpload
+
